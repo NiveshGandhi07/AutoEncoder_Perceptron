@@ -1,0 +1,11 @@
+python train.py -z 32 -e 30 -b 256 -s MLP.32.pth -p loss.MLP.32.png
+python train.py -z 8 -e 30 -b 256 -s MLP.8.pth -p loss.MLP.8.png
+python train.py -z 128 -e 30 -b 256 -s MLP.128.pth -p loss.MLP.128.png
+python test.py -z 32 -s MLP.32.pth
+python test.py -z 8 -s MLP.8.pth
+python test.py -z 128 -s MLP.128.pth
+python denoise.py -z 32 -s MLP.32.pth
+python interpolate.py -z 32 -s MLP.32.pth
+
+
+hydro oe
